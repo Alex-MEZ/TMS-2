@@ -7,3 +7,6 @@ firstname = 'Иван'
 lastname = 'Иванович'
 age = '35'
 
+summ = "Привет, меня зовут " + firstname + " " + lastname + ", мне " + age + " лет"
+
+print(summ)
