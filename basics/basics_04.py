@@ -8,6 +8,7 @@
 a = [1, 2, 3, 4, 5]
 b = []
 b = a
+
 print(id(a))
 b = [2]
 print(id(b))
