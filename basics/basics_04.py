@@ -5,10 +5,19 @@
 # Добавить элемент в список b
 # Вывести на экран оба списка
 
-a = [1, 2, 3, 4, 5]
-b = []
-b = a
+from copy import copy, deepcopy
 
-print(id(a))
-b = [2]
-print(id(b))
+
+a = [1, 2, 3, 4, 5, ['as',101, [-1,-2,-3,]]]
+b = []
+
+print(f'first list id = {id(a)}, second list id = {id(b)}')
+b = a
+print(f'first list id = {id(a)}, second list id = {id(b)}')
+print(b)
+a.append(7)
+print(a, b)
+print(a is b)
+
+b = deepcopy(a)
+print(f'first list id = {id(a)}, second list id = {id(b)}')
