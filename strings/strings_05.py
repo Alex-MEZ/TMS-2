@@ -4,4 +4,4 @@
 my_string = '0123456789'
 
 
-print(my_string[5:-3:3])
+print(my_string[4:-2:3])
