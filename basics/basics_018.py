@@ -2,8 +2,11 @@
 # Разделителями слов считаются пробелы.
 
 str_01 = input("Введите фразу:")
-str_01 = int(str_01)
-print(str_01)
 
-# str_01_list = int(str_01)[::-1]
-# print(str_01_list)
+str_01 = str_01.split()
+
+str_01 = str_01[::-1]
+
+str_01 = " ".join(str_01)
+
+print(str_01)
