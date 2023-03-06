@@ -5,9 +5,9 @@
 
 print("Кредитный калькулятор")
 
-number_n = int(input("Введи сумму кредита:"))
-number_y = int(input("Введи срок кредита в годах:"))
-number_p = int(input("Введи процентную ставку кредита:")) / 100 / 12
+number_n = float(input("Введи сумму кредита:"))
+number_y = float(input("Введи срок кредита в годах:"))
+number_p = float(input("Введи процентную ставку кредита:")) / 100 / 12
 
 # Странная формула по заданию
 number_m = (number_n * number_p * (1 + number_p) ** number_y) / (12 * ((1 + number_p) ** number_y - 1))
@@ -19,10 +19,9 @@ print("Ежемесячная выплата равна ", number_m)
 
 print("Ежемесячная выплата равна по моей формуле", number_m_2)
 
-num_s=number_m*12*number_y
+num_s = number_m * 12 * number_y
 print("Общая сумма выплат за все время:", num_s)
 
-
 # Данные, исходя из моей формулы
-num_s_2=number_m_2*12*number_y
+num_s_2 = number_m_2 * 12 * number_y
 print("Общая сумма выплат за все время(моя формула):", num_s_2)
