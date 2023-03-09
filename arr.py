@@ -13,10 +13,11 @@ import numpy
 # 1
 arr = [1, 2, 3, 4, 4, 4, 5, 5, 2]
 
-#print(sum(arr))
+# print(sum(arr))
 
-result = 0
+
 count = 0
+result = 0
 while count < len(arr):
     result += arr[count]
     count += 1
@@ -28,9 +29,10 @@ print(result)
 # print(result)
 
 # 2
-#avg_arr = sum(arr) / len(arr)
-result = 0
+# avg_arr = sum(arr) / len(arr)
+
 count = 0
+result = 0
 while count < len(arr):
     result += arr[count]
     count += 1
@@ -62,4 +64,15 @@ import statistics
 
 print(statistics.median(arr))
 
-# 7
+# 7 Верхняя квартиль = 0,75 * (n + 1)
+
+arr = [1, 2, 3, 4, 4, 4, 5, 5, 2]
+arr.sort()
+print(arr)
+v_kvart = 0.75 * (len(arr) - 1)
+int_v_kvart = int(v_kvart)
+if v_kvart % 1:
+    print(arr[int_v_kvart])
+else:
+    result = (arr[int_v_kvart] + arr[int_v_kvart + 1]) / 2
+    print(result)
