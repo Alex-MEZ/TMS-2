@@ -6,16 +6,36 @@
 # 5*. Найти кумулятивную сумму
 # 6*. Найти медиану
 # 7*. Найти верхнюю и нижнюю квартиль
-import statistics
 
+import statistics
 import numpy
 
 # 1
 arr = [1, 2, 3, 4, 4, 4, 5, 5, 2]
-print(sum(arr))
+
+#print(sum(arr))
+
+result = 0
+count = 0
+while count < len(arr):
+    result += arr[count]
+    count += 1
+print(result)
+
+# result = 0
+# while arr:
+#     result += arr.pop(0)
+# print(result)
 
 # 2
-avg_arr = sum(arr) / len(arr)
+#avg_arr = sum(arr) / len(arr)
+result = 0
+count = 0
+while count < len(arr):
+    result += arr[count]
+    count += 1
+
+avg_arr = result / len(arr)
 print(avg_arr)
 
 # 3
@@ -37,9 +57,9 @@ print(massiv[-1], massiv)
 # print(sum(arr))
 
 
-#6
+# 6
 import statistics
+
 print(statistics.median(arr))
 
-#7 ???
-
+# 7
