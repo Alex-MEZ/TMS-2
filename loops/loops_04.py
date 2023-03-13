@@ -3,8 +3,8 @@
 
 sum = 0
 while True:
-    num = input("Vvedi chislo (ili 'стоп' dlya zaversheniya: ")
-    if num == "стоп":
+    num = input("Vvedi chislo (ili 'stop' dlya zaversheniya: ")
+    if num == "stop":
         break
     num_1 = int(num)
     if num_1 % 5 == 0:
