@@ -6,4 +6,16 @@
 # Для создания результирующий строки используйте срез)
 
 stroka = input("Vvedi stroka - ")
+stroka_1 = len(stroka)
+stroka_2 = stroka_1 / 2
+if stroka_1 % 2 != 0:
+    print(stroka[int(stroka_2)])
+elif stroka_1 % 2 == 0:
+    print(stroka[int(stroka_2) - 1:int(stroka_2)])
+if stroka[int(stroka_2)] == stroka[0]:
+    print(stroka[1:-1])
+else:
+    pass
 
+    # for x in (len(stroka) / 2):
+    #     print(x)
