@@ -37,8 +37,5 @@ for uchenik in pupils:
     uchenik['sr_bal'] = sr_bal
 
 for uchenik in pupils:
-    if uchenik['sr_bal'] > 4:
+    if uchenik['sr_bal'] > 4 and uchenik['group'] == 42:
         print(uchenik['firstname'], '=', uchenik['sr_bal'])
-
-
-
