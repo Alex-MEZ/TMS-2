@@ -8,5 +8,6 @@ spisok_fam = []
 
 for i in surnames:
     if i[0] == "П" and i[-1] == "а":
-        spisok_fam.append(i)
-print(spisok_fam)
+        print(i)
+#         spisok_fam.append(i)
+# print(spisok_fam)

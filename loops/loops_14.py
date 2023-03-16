@@ -32,10 +32,15 @@ pupils = [
 ]
 
 for uchenik in pupils:
-    bal = uchenik['physics'] + uchenik['informatics'] + uchenik['history']
-    sr_bal = bal / 3
+    sr_bal = (uchenik['physics'] + uchenik['informatics'] + uchenik['history']) / 3
     uchenik['sr_bal'] = sr_bal
 
 for uchenik in pupils:
-    if uchenik['sr_bal'] > 4 and uchenik['group'] == 42:
+    if uchenik['sr_bal'] > 6:
         print(uchenik['firstname'], '=', uchenik['sr_bal'])
+
+# for uchenik in pupils:
+#     sr_bal = (uchenik['physics'] + uchenik['informatics'] + uchenik['history']) / 3
+#     uchenik['sr_bal'] = sr_bal
+#     if uchenik['sr_bal'] > 4:
+#         print(uchenik)
