@@ -7,7 +7,7 @@
 
 stroka = input("Vvedi stroka - ")
 stroka_1 = len(stroka)
-stroka_2 = stroka_1 / 2
+stroka_2 = stroka_1 // 2
 if stroka_1 % 2 != 0:
     print(stroka[int(stroka_2)])
 elif stroka_1 % 2 == 0:
