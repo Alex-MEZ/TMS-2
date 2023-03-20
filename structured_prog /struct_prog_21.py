@@ -9,6 +9,7 @@ y = int(input("До числа -"))
 # b = int(input("Второй делитель -"))
 # x = 100
 # y = 105
+
 # Основное задание
 for i in range(x, y + 1):
     print("Делитель числа", i, "кроме 1 и самого числа: ", end='')
@@ -17,13 +18,13 @@ for i in range(x, y + 1):
             print(j, end=' ')
     print()
 
-# # Похожий пример
+# # Похожий пример #1
 # for i in range(x, y + 1):
 #     if i % a == 0 and i % b == 0:
 #         print(i)
 
 
-# # Еще одна
+# # Еще одна #2
 # for i in range(2, x):
 #     if x % i == 0:
 #         print(i, end=' ')
