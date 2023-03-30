@@ -3,15 +3,28 @@
 from datetime import datetime
 from functools import wraps
 
-time_start = datetime.now()
-def my_decorator(my_func):
-    def inner():
-        result = my_func
-    return inner
-time_end = datetime.now()
 
-def my_func():
-    time_out = time_end - time_start
-    print(time_out)
-print(my_func())
-print(time_start,time_end)
+def my_decorator(my_func):
+    @wraps(my_func)
+    def ineer(*args, **kwargs):
+        start_time = datetime.now()
+        result = my_func(*args, **kwargs)
+        end_time = datetime.now()
+        delta = end_time - start_time
+        print(delta)
+        return result
+
+    return ineer()
+
+
+@my_decorator
+def very_iomportent_func():
+    from time import sleep
+    sleep(0)
+    print("very importent func")
+
+
+# def main():
+#     arr = [i for i range(100)]
+#     very_iomportent_func(arr)
+
