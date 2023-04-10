@@ -13,3 +13,6 @@ def is_power_n(k: int, n: int) -> bool:
         test_k = n ** count
         count += 1
     return False
+
+
+print(is_power_n(10, 9))
