@@ -1,3 +1,4 @@
+from functions.funcs_03 import factorial
 def summ(a, b):
     return a + b
 
