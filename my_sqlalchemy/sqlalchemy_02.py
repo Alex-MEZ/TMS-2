@@ -12,7 +12,8 @@ with engine.connect() as connection:
             ('Kak', 225,'Bal','12430',230),
             ('Kosk', 2225,'Ful','430',800),
             ('Kdok', 4325,'Badl','143',6300),
-            ('Kfok', 2525,'Basl','13430',3300);
+            ('Kfok', 2525,'Basl','13430',3300
+            );
             """
     connection.commit()
     query = text(insert_query)
