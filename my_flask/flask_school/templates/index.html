@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>groups</title>
+</head>
+<body>
+<a href={{url_for('add_group')}}">for adding group - press on
+
+    <table border="1">
+        <tr>
+            <td>group's id</td>
+            <td> group's name</td>
+        </tr>
+        {{% for group in groups %}}
+        <tr>
+            <td>{{ group.id }}</td>
+            <td>{{ group.name }}</td>
+            <td><a href="{{ url_for('update_group', group_id=group.id)}}">press here for update</a></td>
+        </tr>
+
+        {{% endfor %}}
+
+
+    </table>
+
+</body>
+</html>
